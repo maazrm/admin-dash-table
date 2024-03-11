@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="nav-box container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+    
+            <!-- Center the search form -->
+            <div class="d-flex justify-content-center w-100">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+    
+            <!-- Align the dropdown to the right -->
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid vh-100 d-flex flex-column">
+        <main class="row flex-grow-1 overflow-auto">
+            <nav class="col-md-2 bg-dark px-3 py-4 text-light">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-light" href="#">Users</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-light" href="#">Products</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-light" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-light" href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="col-md-10 px-4 py-3">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Registered Roles</h5>
+                        <button type="button" class="btn btn-primary btn-sm">Add New</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Usertype</th>
+                                    <th scope="col">EDIT</th>
+                                    <th scope="col">DELETE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Admin</td>
+                                    <td>8880202617</td>
+                                    <td>admin@gmail.com</td>
+                                    <td>Administrator</td>
+                                    <td><button class="btn btn-sm btn-warning">Edit</button></td>
+                                    <td><button class="btn btn-sm btn-danger">Delete</button></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Include Popper.js and Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
